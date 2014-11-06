@@ -16,9 +16,10 @@ WORKDIR /usr/local/vpnserver
 RUN make i_read_and_agree_the_license_agreement
 RUN apt-get purge -y -q --auto-remove gcc make wget
 
+ADD resources/supervisord.conf /etc/supervisor/supervisord.conf
+
 ADD runner.sh /usr/local/vpnserver/runner.sh
 RUN chmod 755 /usr/local/vpnserver/runner.sh
-
 
 EXPOSE 443/tcp 992/tcp 1194/tcp 1194/udp 5555/tcp
 
