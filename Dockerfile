@@ -22,4 +22,4 @@ RUN chmod 755 /usr/local/vpnserver/runner.sh
 
 EXPOSE 443/tcp 992/tcp 1194/tcp 1194/udp 5555/tcp
 
-ENTRYPOINT ["/usr/local/vpnserver/runner.sh"]
+ENTRYPOINT ["/usr/bin/supervisord"]
