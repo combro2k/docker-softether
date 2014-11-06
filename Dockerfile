@@ -4,7 +4,7 @@ FROM ubuntu:latest
 MAINTAINER Frank Rosquin <frank.rosquin@gmail.com>
 
 RUN apt-get update &&\
-        apt-get -y -q install gcc make wget
+        apt-get -y -q install gcc make wget isc-dhcp-server
 
 ENV VERSION v4.11-9506-beta-2014.10.22
 
