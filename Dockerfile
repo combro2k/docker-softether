@@ -1,10 +1,10 @@
 # SoftEther VPN server
 
-FROM ubuntu:latest
+FROM ubuntu:14.04
 MAINTAINER Frank Rosquin <frank.rosquin@gmail.com>
 
 RUN apt-get update &&\
-        apt-get -y -q install gcc make wget isc-dhcp-server
+        apt-get -y -q install gcc make wget isc-dhcp-server supervisor
 
 ENV VERSION v4.11-9506-beta-2014.10.22
 
