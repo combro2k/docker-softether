@@ -6,7 +6,7 @@ MAINTAINER Frank Rosquin <frank.rosquin@gmail.com>
 RUN apt-get update &&\
         apt-get -y -q install gcc make wget isc-dhcp-server supervisor
 
-ENV VERSION v4.11-9506-beta-2014.10.22
+ENV VERSION v4.12-9514-beta-2014.11.17
 
 RUN wget http://www.softether-download.com/files/softether/${VERSION}-tree/Linux/SoftEther_VPN_Server/64bit_-_Intel_x64_or_AMD64/softether-vpnserver-${VERSION}-linux-x64-64bit.tar.gz -O /tmp/softether-vpnserver.tar.gz &&\
         tar -xzvf /tmp/softether-vpnserver.tar.gz -C /usr/local/ &&\
