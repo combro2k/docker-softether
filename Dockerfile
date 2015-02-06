@@ -1,6 +1,6 @@
 # SoftEther VPN server
 
-FROM ubuntu:14.04
+FROM ubuntu-debootstrap:14.04
 MAINTAINER Frank Rosquin <frank.rosquin@gmail.com>
 
 RUN apt-get update &&\
@@ -23,4 +23,4 @@ RUN chmod 755 /usr/local/vpnserver/runner.sh
 
 EXPOSE 443/tcp 992/tcp 1194/tcp 1194/udp 5555/tcp
 
-ENTRYPOINT ["/usr/bin/supervisord"]
+ENTRYPOINT ["/usr/bin/supervisord", "-c", "/etc/supervisor/supervisord.conf"]
