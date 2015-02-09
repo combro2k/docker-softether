@@ -4,7 +4,7 @@ FROM ubuntu-debootstrap:14.04
 MAINTAINER Frank Rosquin <frank.rosquin@gmail.com>
 
 RUN apt-get update && \
-    apt-get dist-upgrade -yq
+    apt-get dist-upgrade -yq && \
     apt-get -y -q install gcc make wget dnsmasq isc-dhcp-server radvd supervisor
 
 ENV VERSION v4.14-9529-beta-2015.02.02
