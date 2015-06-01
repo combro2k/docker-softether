@@ -1,7 +1,7 @@
 FROM ubuntu-debootstrap:14.04
 MAINTAINER Martijn van Maurik <docker@vmaurik.nl>
 
-ENV VERSION v4.15-9546-beta-2015.04.05
+ENV VERSION v4.17-9562-beta-2015.05.30
 
 RUN apt-get update && \
     apt-get dist-upgrade -yq && \
