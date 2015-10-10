@@ -6,7 +6,7 @@ ENV VERSION v4.19-9582-beta-2015.10.06
 RUN apt-get update && \
     apt-get -y -q install gcc make curl dnsmasq supervisor && \
     curl -L http://www.softether-download.com/files/softether/${VERSION}-tree/Linux/SoftEther_VPN_Server/64bit_-_Intel_x64_or_AMD64/softether-vpnserver-${VERSION}-linux-x64-64bit.tar.gz | \
-    tar -xzv -C /opt/vpnserver --strip-components=1
+    tar -xzv -C /opt
 
 WORKDIR /opt/vpnserver
 
