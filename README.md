@@ -16,7 +16,7 @@ Simplest version:
 
 With external config file:
 
-    docker run -d -v /etc/vpnserver/vpn_server.config:/usr/local/vpnserver/vpn_server.config --net host --name softether combro2k/softether
+    docker run -d -v /etc/vpnserver/vpn_server.config:/opt/vpnserver/vpn_server.config --net host --name softether combro2k/softether
 
 If you want to keep the logs in a data container:
 
