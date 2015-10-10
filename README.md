@@ -26,6 +26,6 @@ If you want to keep the logs in a data container:
 All together now:
 
     docker run -d --name softether-logs --volume /var/log/vpnserver busybox:latest /bin/true
-    docker run -d -v /etc/vpnserver/vpn_server.config:/usr/local/vpnserver/vpn_server.config --volumes-from softether-logs --net host --name softether combro2k/softether
+    docker run -d -v /etc/vpnserver/vpn_server.config:/opt/vpnserver/vpn_server.config --volumes-from softether-logs --net host --name softether combro2k/softether
 
 TODO: Explain how to use a dnsmasq server inside the container and create a separate tap interface
