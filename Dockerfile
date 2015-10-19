@@ -1,7 +1,7 @@
 FROM combro2k/debian-debootstrap:8
 MAINTAINER Martijn van Maurik <docker@vmaurik.nl>
 
-ENV VERSION v4.19-9582-beta-2015.10.06
+ENV VERSION v4.19-9599-beta-2015.10.19
 
 RUN apt-get update && \
     apt-get -y -q install gcc make curl dnsmasq supervisor && \
